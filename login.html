@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Admin</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section class="animated fadeInDown" style="max-width:400px;margin:auto;padding-top:80px;">
+    <h2>🔐 Painel Admin</h2>
+    <form onsubmit="return checkLogin(event)">
+      <input type="text" id="user" placeholder="Usuário" required><br><br>
+      <input type="password" id="pass" placeholder="Senha" required><br><br>
+      <button type="submit" class="botao">Entrar</button>
+    </form>
+  </section>
+  <script>
+    function checkLogin(e) {
+      e.preventDefault();
+      const u = document.getElementById('user').value;
+      const p = document.getElementById('pass').value;
+      if(u === "admin" && p === "1234") {
+        window.location.href = "admin.html";
+      } else {
+        alert("Acesso negado!");
+      }
+    }
+  </script>
+</body>
+</html>

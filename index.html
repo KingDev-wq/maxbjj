@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu Lado no Esporte</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">🏅 Esporte</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links" id="nav">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#conquistas">Conquistas</a></li>
+      <li><a href="#patrocinio">Patrocínio</a></li>
+      <li><a href="#versiculo">Versículo</a></li>
+      <li><a href="galeria.html">📸 Fotos</a></li>
+    </ul>
+  </nav>
+
+  <header class="animated fadeInDown">
+    <h1>Meu Lado no Esporte</h1>
+    <p>Superando limites com fé e determinação</p>
+    <div class="theme-switcher">
+      <label for="theme">Tema:</label>
+      <select id="theme" onchange="changeTheme(this.value)">
+        <option value="red">Vermelho</option>
+        <option value="blue">Azul</option>
+        <option value="green">Verde</option>
+      </select>
+    </div>
+  </header>
+
+  <section id="sobre" class="animated fadeInLeft">
+    <h2>Quem Sou Eu</h2>
+    <p id="sobre-texto">Sou um atleta dedicado que busca representar minha cidade com orgulho.</p>
+  </section>
+
+  <section id="conquistas" class="animated fadeInRight">
+    <h2>Conquistas</h2>
+    <ul id="lista-conquistas">
+      <li>🥇 1º lugar no Campeonato Municipal</li>
+      <li>🥈 2º lugar na Copa Regional</li>
+    </ul>
+  </section>
+
+  <section id="patrocinio" class="animated fadeInLeft">
+    <h2>Me Patrocine</h2>
+    <p>Entre em contato comigo para me apoiar nessa jornada.</p>
+    <a href="https://wa.me/SEUNUMERO" class="botao">Fale comigo</a>
+  </section>
+
+  <section id="versiculo" class="animated fadeInUp">
+    <h2>Versículo do Dia</h2>
+    <p id="versiculo-biblico">Carregando versículo...</p>
+  </section>
+
+  <footer class="animated fadeInUp">
+    <p>© 2025 | <a href="login.html">Painel Admin</a></p>
+  </footer>
+</body>
+</html>
